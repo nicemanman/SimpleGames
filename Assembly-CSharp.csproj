@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8EC525F9-4AC0-3EA7-7710-FEACDFEA2529}</ProjectGuid>
+    <ProjectGuid>{EF83BE7E-99D0-8F01-A7C1-53CEB682ADA1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -76,121 +76,121 @@
      <Compile Include="Assets\FlappyBird\Scripts\ScoreWindow.cs" />
      <None Include="Assets\CodeMonkey\README.txt" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InputSystem">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>G:/Repository/TestScenes/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>G:/SimpleGames/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
