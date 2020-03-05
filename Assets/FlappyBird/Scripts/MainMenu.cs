@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     void Awake()
     {
         transform.Find("Start").GetComponent<Button_UI>().ClickFunc = () => {
-            Loader.Load(Loader.Scene.GameScene);
+            Loader.Load(Loader.Scene.GameSelectionScene);
         };  
         transform.Find("Quit").GetComponent<Button_UI>().ClickFunc = () => {
             Application.Quit();

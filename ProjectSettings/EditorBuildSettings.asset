@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/FlappyBird/Scenes/MainMenu.unity
+    path: Assets/SimpleGames/Scenes/MainMenu.unity
     guid: 674cdb9aa8eb2e444a0f2dbdba0c0b3f
   - enabled: 1
-    path: Assets/FlappyBird/Scenes/LoadingScene.unity
+    path: Assets/SimpleGames/Scenes/LoadingScene.unity
     guid: 20f8f55c3974c514da0acf344e3abd5b
   - enabled: 1
-    path: Assets/FlappyBird/Scenes/GameScene.unity
+    path: Assets/SimpleGames/Scenes/GameSelectionScene.unity
+    guid: 27daae36555ddc14fa0b64146df6f343
+  - enabled: 1
+    path: Assets/FlappyBird/Scenes/FlappyBirdScene.unity
     guid: ad61647ad84a40040a7f1f3718005aa1
   m_configObjects: {}

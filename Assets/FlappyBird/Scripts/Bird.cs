@@ -12,12 +12,14 @@ public class Bird : MonoBehaviour
     
     public static Bird instance {get; private set;}
     private Rigidbody2D birdRigidBody2D;
+    private Collider2D birdCollider2D;
     private enum State{WAITING, PLAYING, DEAD}
     private State state;
     void Awake()
     {
         instance = this;
         birdRigidBody2D = GetComponent<Rigidbody2D>();
+        birdCollider2D = GetComponent<Collider2D>();
         birdRigidBody2D.bodyType = RigidbodyType2D.Static;
         state = State.WAITING;
     }
@@ -53,7 +55,7 @@ public class Bird : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) { 
-        birdRigidBody2D.bodyType = RigidbodyType2D.Static;
+        birdCollider2D.enabled = false;
         state = State.DEAD;
     }
 }
