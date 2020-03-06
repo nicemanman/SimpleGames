@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 public static class Loader
 { 
     public static Dictionary<int, Scene> games = new Dictionary<int, Scene>(); 
-    public static int currentGame;
+    public static int currentGame = 0;
     public enum Scene {FlappyBirdScene, GameSelectionScene, LoadingScene};
     private static Scene targetScene;
+    
+    
     public static void Load(Scene scene){
         SceneManager.LoadScene(Scene.LoadingScene.ToString());
         targetScene = scene;        
@@ -17,8 +19,8 @@ public static class Loader
         SceneManager.LoadScene(targetScene.ToString());
     }
 
-    public static void InitGames(){
+    static Loader(){
         games.Add(0, Scene.FlappyBirdScene);
-        currentGame = 0;
+        
     }
 }

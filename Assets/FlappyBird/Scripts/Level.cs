@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    private const float CAM_ORTHO_SIZE = 50;
+    private const float CAM_ORTHO_SIZE = 20;
     private const float PIPE_WiDTH = 10.4f;
     private const float PIPE_HEAD_HEIGHT = 3.75f;
     private const float BIRD_X_POS = 0f;
@@ -47,6 +47,7 @@ public class Level : MonoBehaviour
     void Update()
     {
         if (state == State.PLAYING){
+            gapSize = UnityEngine.Random.Range(30, 20);
             HandlePipeMovement();
             HandlePipeSpawning();
         }
@@ -91,10 +92,10 @@ public class Level : MonoBehaviour
 
     private void SetDifficulty(Difficulty difficulty){
         switch(difficulty){
-            case Difficulty.EASY: gapSize = 50f; pipeSpawnTimerMax = 1.2f; break;
-            case Difficulty.MEDIUM: gapSize = 40f; pipeSpawnTimerMax = 1.1f;break;
-            case Difficulty.HARD: gapSize = 33f;pipeSpawnTimerMax = 1f; break;
-            case Difficulty.IMPOSSIBLE: gapSize = 24f; pipeSpawnTimerMax = 0.9f; break;
+            case Difficulty.EASY: pipeSpawnTimerMax = 1.2f; break;
+            case Difficulty.MEDIUM: pipeSpawnTimerMax = 1.1f;break;
+            case Difficulty.HARD: pipeSpawnTimerMax = 1f; break;
+            case Difficulty.IMPOSSIBLE: pipeSpawnTimerMax = 0.9f; break;
             
         }
     }

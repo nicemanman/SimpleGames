@@ -8,7 +8,7 @@ public class ChooseGameScript : MonoBehaviour
     
     void Awake()
     {
-        Loader.InitGames();
+       
         transform.Find("Start").GetComponent<Button_UI>().ClickFunc = () => {
             Loader.Load(Loader.games[Loader.currentGame]);
         };  

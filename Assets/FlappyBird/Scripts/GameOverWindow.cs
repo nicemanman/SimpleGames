@@ -11,7 +11,7 @@ public class GameOverWindow : MonoBehaviour
         
         scoreText = transform.Find("ScoreText").GetComponent<Text>();
         transform.Find("RetryButton").GetComponent<Button_UI>().ClickFunc = () => {
-            Loader.Load(Loader.games[Loader.currentGame]);
+            Loader.Load(Loader.games[0]);
         };    
         
         
