@@ -65,6 +65,7 @@
      <Compile Include="Assets\CodeMonkey\Utils\World_Mesh.cs" />
      <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\Bird.cs" />
+     <Compile Include="Assets\FlappyBird\Scripts\BirdSoundManager.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\GameAssets.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\GameManager.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\GameOverWindow.cs" />

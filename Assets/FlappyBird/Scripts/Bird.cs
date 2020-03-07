@@ -52,10 +52,12 @@ public class Bird : MonoBehaviour
 
     private void Jump(){
         birdRigidBody2D.velocity = Vector2.up * JUMP_AMOUNT;
+        BirdSoundManager.play("jump");
     }
 
     private void OnTriggerEnter2D(Collider2D other) { 
         birdCollider2D.enabled = false;
         state = State.DEAD;
+        BirdSoundManager.play("die");
     }
 }

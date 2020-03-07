@@ -47,7 +47,7 @@ public class Level : MonoBehaviour
     void Update()
     {
         if (state == State.PLAYING){
-            gapSize = UnityEngine.Random.Range(30, 20);
+            gapSize = UnityEngine.Random.Range(20, 15);
             HandlePipeMovement();
             HandlePipeSpawning();
         }
@@ -79,6 +79,7 @@ public class Level : MonoBehaviour
                     pipe.Move();
                     if (isToTheRightOfTheBird && pipe.x < BIRD_X_POS){
                         score++;
+                        BirdSoundManager.play("score");
                     }
                     if (pipe.x < GameAssets.instance.PIPE_DESTROY_X_POSITION)
                         {

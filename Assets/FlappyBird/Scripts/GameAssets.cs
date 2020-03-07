@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(AudioSource))]
 public class GameAssets : MonoBehaviour
 {
     public float PIPE_DESTROY_X_POSITION  = -100f;
@@ -14,7 +14,12 @@ public class GameAssets : MonoBehaviour
     public Transform pfPipeHead;
     public Transform pfPipeBody;
     
+
     private void Awake() {
-        instance = this;        
+        instance = this;    
+         
     }
+
+     
+
 }
