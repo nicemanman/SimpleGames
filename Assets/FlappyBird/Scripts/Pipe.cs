@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour
 {
-    
-    
+ 
     public float x {get {return pipeBody.position.x;} private set{}}
     public float y {get {return pipeBody.position.y;} private set{}}
     

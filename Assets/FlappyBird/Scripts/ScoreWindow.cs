@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ScoreWindow : MonoBehaviour
 {
-    private Text scoreText;
+    [SerializeField]private Text scoreText;
     void Start()
     {
-        scoreText = transform.Find("ScoreText").GetComponent<Text>();
+        scoreText = scoreText.GetComponent<Text>();
     }
 
     // Update is called once per frame

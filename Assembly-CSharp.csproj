@@ -76,6 +76,14 @@
      <Compile Include="Assets\FlappyBird\Scripts\Pipe.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\ScoreWindow.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\ChooseGameScript.cs" />
+     <Compile Include="Assets\SimpleGames\Scripts\Game.cs" />
+     <Compile Include="Assets\SimpleGames\Scripts\GameList.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Command.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\EmptyCommand.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\KeyboardManagement.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Movable.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Move.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Player.cs" />
      <None Include="Assets\CodeMonkey\README.txt" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>C:/Users/MrFalko/Documents/0Repository/SimpleGames/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>

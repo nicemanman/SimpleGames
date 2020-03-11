@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FlappyBird/Scenes/FlappyBirdScene.unity
     guid: ad61647ad84a40040a7f1f3718005aa1
+  - enabled: 1
+    path: Assets/ZeldaLike/Scenes/SimpleRPG.unity
+    guid: 5936e93bd7dbeeb4e9b7e077fb921d0c
   m_configObjects: {}

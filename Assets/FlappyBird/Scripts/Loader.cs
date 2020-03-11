@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public static class Loader
 { 
-    public static Dictionary<int, Scene> games = new Dictionary<int, Scene>(); 
-    public static int currentGame = 0;
-    public enum Scene {FlappyBirdScene, GameSelectionScene, LoadingScene};
+    
+    
+    public enum Scene {GameSelectionScene, LoadingScene};
     private static Scene targetScene;
     
     
     public static void Load(Scene scene){
-        SceneManager.LoadScene(Scene.LoadingScene.ToString());
+        try{
+            SceneManager.LoadScene(Scene.LoadingScene.ToString());
+        }
+        catch(UnityException){}
         targetScene = scene;        
     }
 
@@ -19,8 +22,8 @@ public static class Loader
         SceneManager.LoadScene(targetScene.ToString());
     }
 
-    static Loader(){
-        games.Add(0, Scene.FlappyBirdScene);
-        
+    public static void Load(string name){
+        SceneManager.LoadScene(name);
     }
+
 }
