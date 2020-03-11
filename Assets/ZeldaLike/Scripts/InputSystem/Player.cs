@@ -30,9 +30,10 @@ public class Player : MonoBehaviour
         nextposition.y = Input.GetAxisRaw("Vertical");
         myRigidBody.MovePosition((Vector2)transform.position + nextposition * speed * Time.deltaTime);
     }
-
+    public void Attack(){}
+    public void Talk(){}
     public KeyCode[] movementKeys(){
         return new KeyCode[]{KeyCode.A, KeyCode.W, KeyCode.S, KeyCode.D};
     }
-    //other operations
+    
 }
