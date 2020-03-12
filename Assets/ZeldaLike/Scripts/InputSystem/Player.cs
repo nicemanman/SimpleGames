@@ -11,19 +11,19 @@ public class Player : MonoBehaviour
     public KeyboardManagement commandSystem;
     private Rigidbody2D myRigidBody; 
     private Animator animator;
-    private KeyCode[] movementKeysList;
+    
     void Start()
     {
-        movementKeysList = movementKeys();
+        
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        nextposition = new Vector2(0,0);
+        nextposition = Vector2.zero;
         commandSystem.setCommand(0, new Move(this));
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         StaySteel();
-        if (areMovingKeysPressed())
+        if (KeysControl.AWSDPressed())
           commandSystem.Execute(0);
         
     }
@@ -42,14 +42,6 @@ public class Player : MonoBehaviour
     }
     public void Attack(){}
     public void Talk(){}
-    public KeyCode[] movementKeys(){
-        return new KeyCode[]{KeyCode.A, KeyCode.W, KeyCode.S, KeyCode.D};
-    }
-    public bool areMovingKeysPressed(){
-        foreach (KeyCode key in movementKeysList)
-        if (Input.GetKey(key))
-            return true;
-        return false;
-    }
+    
     
 }
