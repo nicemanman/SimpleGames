@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.2" tiledversion="1.3.3" name="Overworld" tilewidth="16" tileheight="16" tilecount="1440" columns="40">
  <editorsettings>
-  <export target="" format="tsx"/>
+  <export target="OverworldTextures.tsx" format="tsx"/>
  </editorsettings>
  <image source="Overworld.png" width="640" height="576"/>
  <terraintypes>
   <terrain name="Path" tile="-1"/>
-  <terrain name="forest" tile="1201"/>
+  <terrain name="Water2" tile="0"/>
+  <terrain name="forest" tile="0"/>
  </terraintypes>
- <tile id="564" terrain=",,,1"/>
- <tile id="685" terrain=",1,,"/>
- <tile id="686" terrain="1,,,"/>
- <tile id="763" terrain=",1,,"/>
- <tile id="764" terrain="1,1,,"/>
- <tile id="765" terrain="1,,,"/>
+ <tile id="242" terrain=",,,1"/>
+ <tile id="243" terrain=",,1,1"/>
+ <tile id="244" terrain=",,1,"/>
+ <tile id="282" terrain=",1,,1"/>
+ <tile id="283" terrain="1,1,1,1"/>
+ <tile id="284" terrain="1,,1,"/>
+ <tile id="322" terrain=",1,,"/>
+ <tile id="323" terrain="1,1,,"/>
+ <tile id="324" terrain="1,,,"/>
+ <tile id="362" terrain="1,1,1,"/>
+ <tile id="363" terrain="1,1,,1"/>
+ <tile id="402" terrain="1,,1,1"/>
+ <tile id="403" terrain=",1,1,1"/>
  <tile id="1160" terrain=",,,0"/>
  <tile id="1161" terrain=",,0,0"/>
  <tile id="1162" terrain=",,0,"/>
