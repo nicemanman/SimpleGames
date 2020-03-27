@@ -19,21 +19,30 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         nextposition = Vector2.zero;
         commandSystem.setCommand(0, new Move(this));
+        commandSystem.setCommand(1, new Read(this));
     }
 
     private void FixedUpdate() {
         StaySteel();
         if (KeysControl.AWSDPressed())
-          commandSystem.Execute(0);
+            commandSystem.Execute(0);
+        else if (KeysControl.ReadKeyPressed())
+            commandSystem.Execute(1);
         
     }
-    public void Move(){
+    public void Move()
+    {
         nextposition.x = Input.GetAxisRaw("Horizontal");
         nextposition.y = Input.GetAxisRaw("Vertical");
         myRigidBody.MovePosition((Vector2)transform.position + nextposition * speed * Time.deltaTime);
         animator.SetFloat("moveX",nextposition.x);
         animator.SetFloat("moveY",nextposition.y); 
         animator.SetBool("moving",true);
+    }
+
+    public void Read()
+    {
+        
     }
 
     public void StaySteel(){

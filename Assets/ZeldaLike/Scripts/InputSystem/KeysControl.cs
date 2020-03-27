@@ -5,17 +5,24 @@ using UnityEngine;
 public static class KeysControl
 {
     private static KeyCode[] movementKeysList;
-    private static KeyCode talk;
+    private static KeyCode read;
     private static KeyCode attack;
     
     static KeysControl(){
         movementKeysList = new KeyCode[]{KeyCode.A, KeyCode.W, KeyCode.S, KeyCode.D};
+        read = KeyCode.F;
     }
     
     public static bool AWSDPressed(){
         foreach (KeyCode key in movementKeysList)
         if (Input.GetKey(key))
             return true;
+        return false;
+    }
+
+    public static bool ReadKeyPressed()
+    {
+        if (Input.GetKey(read)) return true;
         return false;
     }
 }
