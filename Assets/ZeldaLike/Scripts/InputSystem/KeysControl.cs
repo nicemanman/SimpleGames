@@ -11,6 +11,7 @@ public static class KeysControl
     static KeysControl(){
         movementKeysList = new KeyCode[]{KeyCode.A, KeyCode.W, KeyCode.S, KeyCode.D};
         action = KeyCode.F;
+        attack = KeyCode.G;
     }
     
     public static bool AWSDPressed(){
@@ -23,6 +24,12 @@ public static class KeysControl
     public static bool ActionKeyPressed()
     {
         if (Input.GetKeyDown(action)) return true;
+        return false;
+    }
+
+    public static bool AttackKeyPressed()
+    {
+        if (Input.GetKeyDown(attack)) return true;
         return false;
     }
 }

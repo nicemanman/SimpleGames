@@ -78,6 +78,7 @@
      <Compile Include="Assets\SimpleGames\Scripts\ChooseGameScript.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\Game.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\GameList.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Attack.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Command.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\ContextAction.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\EmptyCommand.cs" />
