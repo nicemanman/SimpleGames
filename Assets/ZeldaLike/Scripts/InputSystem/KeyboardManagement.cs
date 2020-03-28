@@ -22,13 +22,9 @@ public class KeyboardManagement : MonoBehaviour
 
     public void Execute(int number){
         buttons[number].Execute();
-        commandHistory.Push(buttons[number]);
     }
     public void Undo(int number){
-       if (commandHistory.Count > 0){
-           Command command = commandHistory.Pop();
-           command.Undo();
-       }
+        buttons[number].Undo();
     }
     
 }

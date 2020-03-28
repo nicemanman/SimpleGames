@@ -5,12 +5,12 @@ using UnityEngine;
 public static class KeysControl
 {
     private static KeyCode[] movementKeysList;
-    private static KeyCode read;
+    private static KeyCode action;
     private static KeyCode attack;
     
     static KeysControl(){
         movementKeysList = new KeyCode[]{KeyCode.A, KeyCode.W, KeyCode.S, KeyCode.D};
-        read = KeyCode.F;
+        action = KeyCode.F;
     }
     
     public static bool AWSDPressed(){
@@ -20,9 +20,9 @@ public static class KeysControl
         return false;
     }
 
-    public static bool ReadKeyPressed()
+    public static bool ActionKeyPressed()
     {
-        if (Input.GetKey(read)) return true;
+        if (Input.GetKeyDown(action)) return true;
         return false;
     }
 }
