@@ -26,7 +26,9 @@ public static class KeysControl
         if (Input.GetKeyDown(action)) return true;
         return false;
     }
-
+    public static string GetActionKey(){
+        return action.ToString();
+    }
     public static bool AttackKeyPressed()
     {
         if (Input.GetKeyDown(attack)) return true;

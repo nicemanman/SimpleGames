@@ -16,8 +16,10 @@ public class Player : MonoBehaviour
     private Readable ReadableObject;
     private delegate void action();
     private action currentAction;
-    
-    [InspectorName("Dialog box")]
+    //text box for actions
+    public GameObject ContextActionsBox;
+    public Text ContextActionsTextObj; 
+    //text box for dialogs
     public GameObject DialogBox;
     public Text DialogBoxTextObj; 
     
@@ -62,13 +64,14 @@ public class Player : MonoBehaviour
         DialogBox?.SetActive(true);
         DialogBoxTextObj.text = "";
         StartCoroutine(ReadableObject.Read(DialogBoxTextObj));
+        
     }
 
     public void ReadClose(){
         DialogBox?.SetActive(false); 
+        ContextActionsBox?.SetActive(false);
         DialogBoxTextObj.text = ""; 
         StopCoroutine(ReadableObject.Read(DialogBoxTextObj));  
-    
     }
     
     public void StaySteel(){
@@ -87,7 +90,7 @@ public class Player : MonoBehaviour
         Debug.Log("Attack");
         yield return null;
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.3f);
         isAttacking = false;
     }
     public void Talk(){}
@@ -97,6 +100,8 @@ public class Player : MonoBehaviour
         {
             ReadableObject = other.GetComponent<Readable>();
             currentAction = Read;
+            ContextActionsBox?.SetActive(true);
+            ContextActionsTextObj.text = $"{KeysControl.GetActionKey()} - read";
         }    
     }
 
@@ -106,6 +111,7 @@ public class Player : MonoBehaviour
             commandSystem.Undo(1);
             ReadableObject = null;
             currentAction = null;  
+            
         } 
     }
 }
