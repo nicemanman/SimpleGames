@@ -6,12 +6,13 @@ using CodeMonkey.Utils;
 public class GameOverWindow : MonoBehaviour
 {
     private Text scoreText;
+    public GameList GameList;
 
     private void Awake() {
         
         scoreText = transform.Find("ScoreText").GetComponent<Text>();
         transform.Find("RetryButton").GetComponent<Button_UI>().ClickFunc = () => {
-            Loader.Load(GameList.getCurrent());
+            Loader.Load(GameList.getCurrentIndex());
         };    
         
         

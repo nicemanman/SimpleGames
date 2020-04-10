@@ -10,20 +10,21 @@ public class ChooseGameScript : MonoBehaviour
     [SerializeField]private GameObject LeftArrow;
     [SerializeField]private GameObject RightArrow;
     [SerializeField]private GameObject StartButton;
-    
+    [SerializeField] private Image GamePreview;
+    [SerializeField] private GameList GameList;
     void Awake()
     {
-        countText.text = GameList.getCurrentIndex();
+        GamePreview.sprite = GameList.getCurrent();
         LeftArrow.GetComponent<Button_UI>().ClickFunc = () => {
             GameList.prev();
-            countText.text = GameList.getCurrentIndex();
+            GamePreview.sprite = GameList.getCurrent();
         };  
         RightArrow.GetComponent<Button_UI>().ClickFunc = () => {
             GameList.next();
-            countText.text = GameList.getCurrentIndex();
+            GamePreview.sprite = GameList.getCurrent();
         };  
         StartButton.GetComponent<Button_UI>().ClickFunc = () => {
-            Loader.Load(GameList.getCurrent());
+            Loader.Load(GameList.getCurrentIndex());
         };
         
         

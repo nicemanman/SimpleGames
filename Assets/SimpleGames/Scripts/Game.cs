@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Game : MonoBehaviour
+[System.Serializable]
+public class Game
 {   
-    public Game(string name){
-    //грузим спрайт по названию
-    //устанавливаем какие-то параметры сцены   
-    }
+    public Sprite sprite;
+    public string name;
 }
