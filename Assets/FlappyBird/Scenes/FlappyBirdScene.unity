@@ -974,6 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef6d99687a45374180513ec58c2fe28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisSceneName: FlappyBirdScene
 --- !u!114 &847993785
 MonoBehaviour:
   m_ObjectHideFlags: 0

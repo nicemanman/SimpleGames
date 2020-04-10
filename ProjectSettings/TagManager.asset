@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Readable
   - Hurtable
+  - Smashable
   layers:
   - Default
   - TransparentFX

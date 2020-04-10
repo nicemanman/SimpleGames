@@ -4,30 +4,40 @@ using UnityEngine;
 
 public class GameList : MonoBehaviour
 {
-    public static Dictionary<int, string> games = new Dictionary<int, string>(); 
-    private static int currentGame = 0;
+    
+    private int currentGame = 0;
+    public Game[] gamesArray;
     void Start()
     {
-        games.Add(0, "FlappyBirdScene");
-        games.Add(1, "SimpleRPG");
-        games.Add(2, "SimpleRPG");
-        games.Add(3, "SimpleRPG");
+          
+    }
+
+    public void next(){
+        if (gamesArray.Length > currentGame + 1)
+            currentGame++;
+        else
+            currentGame = 0;
+    }
+    public void prev(){
+        if (currentGame > 0)
+            currentGame--;
+        else
+            currentGame = gamesArray.Length - 1;
+    }
+    public Sprite getCurrent(){
+        try
+        {
+            return gamesArray[currentGame].sprite;
+        }
+        catch 
+        {
+            throw new System.ArgumentNullException(nameof(currentGame) + " _ " +currentGame);
+        }
         
     }
 
-    public static void next(){
-        if (games.Count > currentGame)
-        currentGame++;
-    }
-    public static void prev(){
-        if (currentGame > 0)
-        currentGame--;
-    }
-    public static string getCurrent(){
-        return games[currentGame];
-    }
-    public static string getCurrentIndex(){
-        return currentGame.ToString();
+    public string getCurrentSceneName(){
+        return gamesArray[currentGame].sceneName;
     }
     
 }
