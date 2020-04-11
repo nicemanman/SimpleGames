@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey;
+using UnityEngine.UI;
 [RequireComponent (typeof (Rigidbody2D))]
 public class Bird : MonoBehaviour
 {
@@ -52,12 +53,12 @@ public class Bird : MonoBehaviour
 
     private void Jump(){
         birdRigidBody2D.velocity = Vector2.up * JUMP_AMOUNT;
-        BirdSoundManager.play("jump");
+        SoundManager.play("jump");
     }
 
     private void OnTriggerEnter2D(Collider2D other) { 
         birdCollider2D.enabled = false;
         state = State.DEAD;
-        BirdSoundManager.play("die");
+        SoundManager.play("die");
     }
 }

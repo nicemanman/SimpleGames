@@ -16,10 +16,12 @@ public class ChooseGameScript : MonoBehaviour
     {
         GamePreview.sprite = GameList.getCurrent();
         LeftArrow.GetComponent<Button_UI>().ClickFunc = () => {
+            SoundManager.play("click");
             GameList.prev();
             GamePreview.sprite = GameList.getCurrent();
         };  
         RightArrow.GetComponent<Button_UI>().ClickFunc = () => {
+            SoundManager.play("click");
             GameList.next();
             GamePreview.sprite = GameList.getCurrent();
         };  

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 using CodeMonkey.Utils;
+
 public class GameOverWindow : MonoBehaviour
-{
+{ 
     private Text scoreText;
     public string thisSceneName;
 

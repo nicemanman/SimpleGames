@@ -79,7 +79,7 @@ public class Level : MonoBehaviour
                     pipe.Move();
                     if (isToTheRightOfTheBird && pipe.x < BIRD_X_POS){
                         score++;
-                        BirdSoundManager.play("score");
+                        SoundManager.play("score");
                     }
                     if (pipe.x < GameAssets.instance.PIPE_DESTROY_X_POSITION)
                         {

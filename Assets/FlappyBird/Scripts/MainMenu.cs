@@ -4,15 +4,24 @@ using UnityEngine;
 using CodeMonkey.Utils;
 public class MainMenu : MonoBehaviour
 {
+
+    public GameObject startButton;
+    public GameObject quitButton;
+    
     // Start is called before the first frame update
     void Awake()
     {
-        transform.Find("Start").GetComponent<Button_UI>().ClickFunc = () => {
+        
+        startButton.GetComponent<Button_UI>().ClickFunc = () => {
+            SoundManager.play("click");
             Loader.Load(Loader.Scene.GameSelectionScene);
         };  
-        transform.Find("Quit").GetComponent<Button_UI>().ClickFunc = () => {
+        quitButton.GetComponent<Button_UI>().ClickFunc = () => {
+            SoundManager.play("click");
             Application.Quit();
-        };  
+        }; 
+
+        
     }
 
     // Update is called once per frame
