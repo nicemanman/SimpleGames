@@ -93,6 +93,7 @@
      <Compile Include="Assets\ZeldaLike\Scripts\Other\Pot.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\Readable.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\Sign.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\Other\Window.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\RoomMoving\Room.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\RoomMoving\RoomTransfer.cs" />
      <None Include="Assets\CodeMonkey\README.txt" />

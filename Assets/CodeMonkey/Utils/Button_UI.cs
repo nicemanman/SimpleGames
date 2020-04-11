@@ -21,6 +21,10 @@ using UnityEngine.EventSystems;
 
 namespace CodeMonkey.Utils {
     
+    public enum ButtonType
+        {
+            OpenWindow, CloseWindow
+        }
     /*
      * Button in the UI
      * */
@@ -46,6 +50,9 @@ namespace CodeMonkey.Utils {
             Change_Image,
             Change_SetActive,
         }
+
+        
+        public ButtonType type;
         public HoverBehaviour hoverBehaviourType = HoverBehaviour.Custom;
         private Action hoverBehaviourFunc_Enter, hoverBehaviourFunc_Exit;
 
