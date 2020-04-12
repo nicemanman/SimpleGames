@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.SetFloat("moveX",0);
+        animator.SetFloat("moveY",-1);
+        
         nextposition = Vector2.zero;
         commandSystem.setCommand(0, new Move(this));
         commandSystem.setCommand(1, new ContextAction(this));
@@ -48,6 +51,7 @@ public class Player : MonoBehaviour
     {
         nextposition.x = Input.GetAxisRaw("Horizontal");
         nextposition.y = Input.GetAxisRaw("Vertical");
+        nextposition.Normalize();
         myRigidBody.MovePosition((Vector2)transform.position + nextposition * speed * Time.deltaTime);
         animator.SetFloat("moveX",nextposition.x);
         animator.SetFloat("moveY",nextposition.y); 
@@ -71,6 +75,7 @@ public class Player : MonoBehaviour
         DialogBox?.SetActive(false); 
         ContextActionsBox?.SetActive(false);
         DialogBoxTextObj.text = ""; 
+        
         StopCoroutine(ReadableObject.Read(DialogBoxTextObj));  
     }
     

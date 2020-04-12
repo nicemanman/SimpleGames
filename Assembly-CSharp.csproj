@@ -86,6 +86,7 @@
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\KeysControl.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Move.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Player.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\Other\AllKeysPanel.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\Breakable.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\CameraMovement.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\ConstantValues.cs" />
