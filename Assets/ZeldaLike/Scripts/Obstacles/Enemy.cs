@@ -2,17 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, AliveObject
 {
-    // Start is called before the first frame update
-    void Start()
+    private KeyboardManagement commandSystem;
+    public void Start()
     {
+        commandSystem = new KeyboardManagement();
+        commandSystem.setCommand(0, new Move(this));
+        commandSystem.setCommand(1, new Attack(this));
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
         
+    }
+    
+
+    public void Move()
+    {
+            
+    }
+
+    public void Attack()
+    {
+
     }
 }

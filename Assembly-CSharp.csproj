@@ -78,13 +78,13 @@
      <Compile Include="Assets\SimpleGames\Scripts\ChooseGameScript.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\Game.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\GameList.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\AliveObject.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Attack.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Command.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\ContextAction.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\EmptyCommand.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\KeyboardManagement.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\KeysControl.cs" />
-     <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Movable.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Move.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Player.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Obstacles\Enemy.cs" />

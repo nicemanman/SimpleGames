@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Attack : Command
 {
-    Player player;
-    public Attack(Player player)
+    AliveObject player;
+    public Attack(AliveObject player)
     {
         this.player = player;
     }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 
-public class Player : MonoBehaviour, Movable
+public class Player : MonoBehaviour, AliveObject
 {
     private Vector2 nextposition;
     public float speed;
@@ -47,7 +47,7 @@ public class Player : MonoBehaviour, Movable
             commandSystem.Execute(2);
         
     }
-    public void Move()
+    public void Move()//Movable
     {
         nextposition.x = Input.GetAxisRaw("Horizontal");
         nextposition.y = Input.GetAxisRaw("Vertical");

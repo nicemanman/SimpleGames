@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Move : Command
 {
-   Movable obj;
+   AliveObject obj;
    
-   public Move(Movable obj){
+   public Move(AliveObject obj){
        this.obj = obj;  
    }
    public override void Execute(){
