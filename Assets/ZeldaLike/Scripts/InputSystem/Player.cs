@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, Movable
 {
     private Vector2 nextposition;
     public float speed;

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Move : Command
 {
-   Player player;
+   Movable obj;
    
-   public Move(Player player){
-       this.player = player;  
+   public Move(Movable obj){
+       this.obj = obj;  
    }
    public override void Execute(){
-       player.Move();
+       obj.Move();
    }
 
    public override void Undo(){
