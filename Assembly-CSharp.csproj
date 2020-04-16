@@ -88,6 +88,7 @@
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Move.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\InputSystem\Player.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Obstacles\Enemy.cs" />
+     <Compile Include="Assets\ZeldaLike\Scripts\Obstacles\EnemyLog.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\AllKeysPanel.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\Breakable.cs" />
      <Compile Include="Assets\ZeldaLike\Scripts\Other\CameraMovement.cs" />

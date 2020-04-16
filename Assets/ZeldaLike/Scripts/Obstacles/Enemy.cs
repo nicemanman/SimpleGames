@@ -2,30 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, AliveObject
+public abstract class Enemy : MonoBehaviour, AliveObject
 {
-    private KeyboardManagement commandSystem;
-    public void Start()
+    protected KeyboardManagement commandSystem;
+    public int health = 100;
+    public string enemyName;
+    public int baseAttack = 10;
+    public float moveSpeed;
+    private void Start()
     {
         commandSystem = new KeyboardManagement();
         commandSystem.setCommand(0, new Move(this));
         commandSystem.setCommand(1, new Attack(this));
-        
     }
 
-    public void Update()
-    {
-        
-    }
     
+    public abstract void Move();
 
-    public void Move()
-    {
-            
-    }
+    public abstract void Attack();
 
-    public void Attack()
-    {
-
-    }
+    public abstract void DetectPlayer();
 }
