@@ -9,7 +9,7 @@ public class Player : MonoBehaviour, AliveObject
 {
     private Vector2 nextposition;
     public float speed;
-    public KeyboardManagement commandSystem;
+    private KeyboardManagement commandSystem;
     private Rigidbody2D myRigidBody; 
     private Animator animator;
     //different actions - read, lift up, throw out, talk...
@@ -32,6 +32,7 @@ public class Player : MonoBehaviour, AliveObject
         animator.SetFloat("moveY",-1);
         
         nextposition = Vector2.zero;
+        commandSystem = new KeyboardManagement();
         commandSystem.setCommand(0, new Move(this));
         commandSystem.setCommand(1, new ContextAction(this));
         commandSystem.setCommand(2, new Attack(this));
@@ -92,7 +93,6 @@ public class Player : MonoBehaviour, AliveObject
     {
         animator.SetBool("attacking", true);
         isAttacking = true;
-        Debug.Log("Attack");
         yield return null;
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(.3f);
