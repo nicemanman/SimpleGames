@@ -34,6 +34,7 @@ public class GameOverWindow : MonoBehaviour
     }
 
     private void Hide(){
+        if (!gameObject.activeSelf)
         gameObject.SetActive(false);
     }
 

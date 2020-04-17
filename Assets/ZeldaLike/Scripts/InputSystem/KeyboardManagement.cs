@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyboardManagement : MonoBehaviour
+public class KeyboardManagement
 {
     private Command[] buttons;
     Stack<Command> commandHistory;
-    
-    void Awake()
+     
+    public KeyboardManagement()
     {
         buttons = new Command[10];
         for (int i = 0; i < buttons.Length; i++){
