@@ -23,7 +23,7 @@ namespace CodeMonkey.Utils {
     
     public enum ButtonType
         {
-            OpenWindow, CloseWindow
+            OpenWindow, CloseWindow, Quit
         }
     /*
      * Button in the UI

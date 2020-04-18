@@ -1,44 +1,52 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using CodeMonkey.Utils;
 public class Window : MonoBehaviour
 {
-
-    public Button_UI button1;
-    public GameObject window;
+    public Settings[] settingsList;
+    
     private Window windowObject;
+    //Если canvas активный - вы можете нажимать клавиши на нем
     public bool isActiveCanvas = true;
     public bool isRootCanvas = false;
     // Start is called before the first frame update
     void Start()
     {
-        windowObject = window.GetComponent<Window>();
-        if (button1.type == ButtonType.OpenWindow)
-        button1.ClickFunc = () => {
-            if (isActiveCanvas)
+        foreach (Settings s in settingsList)
+        {
+            var button = s.button;
+            s.button.ClickFunc = () => 
             {
-                window.SetActive(true);
-                isActiveCanvas = false;
-                windowObject.isActiveCanvas = true;
-                
-            }
+                var window = s.window;
+                windowObject = window.GetComponent<Window>();
+                if (isActiveCanvas)
+                {
+                    if (button.type == ButtonType.OpenWindow)
+                    {
+                        window.SetActive(true);
+                    }
+                    else if (button.type == ButtonType.CloseWindow)
+                    {
+                        this.gameObject.SetActive(false); 
+                    }
+                    else if (button.type == ButtonType.Quit)
+                    {
+                        Loader.Load("MainMenu");
+                    }
+                    windowObject.isActiveCanvas = true;
+                    isActiveCanvas = false;
+                }
             };
-        else
-        button1.ClickFunc = () => {
-            if (isActiveCanvas)
-            {
-                gameObject.SetActive(false);
-                windowObject.isActiveCanvas = true;
-                isActiveCanvas = false;
-            }
-            };
-
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    [System.Serializable]
+    public class Settings
     {
-        
+        public Button_UI button;
+        //Это окно, которое надо сделать activeCanvas по нажатию.
+        public GameObject window;
     }
 }

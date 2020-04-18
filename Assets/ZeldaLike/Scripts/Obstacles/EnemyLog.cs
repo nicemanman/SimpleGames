@@ -43,8 +43,6 @@ public class EnemyLog : Enemy
         if (playerDetected) commandSystem.Execute(2);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("Collised!");
-    }
+    
     
 }
