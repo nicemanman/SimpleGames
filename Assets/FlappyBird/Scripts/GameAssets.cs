@@ -10,16 +10,19 @@ public class GameAssets : MonoBehaviour
     public float PIPE_MOVE_SPEED  = 100000f;
     public static GameAssets instance {get; private set;}
     public Sprite pipeHeadSprite;
-    public Sprite ground;
     public Transform pfPipeHead;
     public Transform pfPipeBody;
-    
-
+    public Sprite ground;
+    public GameObject[] Backgrounds = new GameObject[3];
+    public GameObject threshold;
     private void Awake() {
         instance = this;    
          
     }
 
-     
+    public void Update()
+    {
+        
+    }
 
 }

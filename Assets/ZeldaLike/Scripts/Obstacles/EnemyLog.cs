@@ -21,8 +21,12 @@ public class EnemyLog : Enemy
     }
 
     private void Update() {
-        
-        DetectPlayer();  
+        if (!paused)
+        {
+            DetectPlayer();
+            //all actions are in here
+        }
+          
     }
     public override void Attack(){}
 

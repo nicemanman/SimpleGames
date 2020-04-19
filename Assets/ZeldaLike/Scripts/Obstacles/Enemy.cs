@@ -11,9 +11,23 @@ public abstract class Enemy : MonoBehaviour, AliveObject
     public string enemyName;
     public int baseAttack = 10;
     public float moveSpeed;
-    
-   
-    
+    public bool paused;
+    public Enemy()
+    {
+        ZeldaGameManager.BlockedRootCanvas += BlockMoving;
+        ZeldaGameManager.UnblockedRootCanvas += UnblockMoving;
+    }
+
+    public void BlockMoving()
+    {
+        paused = true;
+    }
+
+    public void UnblockMoving()
+    {
+        paused = false;
+    }
+
     public abstract void Move();
 
     public abstract void Attack();

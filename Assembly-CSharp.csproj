@@ -75,6 +75,7 @@
      <Compile Include="Assets\FlappyBird\Scripts\Pipe.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\ScoreWindow.cs" />
      <Compile Include="Assets\FlappyBird\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\MenuManager.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\ChooseGameScript.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\Game.cs" />
      <Compile Include="Assets\SimpleGames\Scripts\GameList.cs" />
